@@ -1,9 +1,9 @@
-“ vim:set foldmarker={,} foldlevel=0 foldmethod=marker :
+" vim:set foldmarker={,} foldlevel=0 foldmethod=marker :
 " vimrc
 " Structure based on :options command
 " Use :help 'option' to see the documentation for the given option.
 
-" Use Vim settings, rather then Vi settings (much better!). See :h vi-differences
+" Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
@@ -204,7 +204,6 @@ set ttimeout
 set ttimeoutlen=100
 
 inoremap <C-U> <C-G>u<C-U>
-inoremap <CR> {<CR>}<C-o>O
 inoremap jk <Esc>
 let mapleader = "\<space>"
 nmap <leader>l :set list!<CR> " Shortcut to rapidly toggle `set list`
