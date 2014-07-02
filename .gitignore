@@ -18,5 +18,6 @@ Thumbs.db
 
 # VIM plugins
 .vim/bundle
+!.vim/bundle/Vundle.vim
 
 

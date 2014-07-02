@@ -129,7 +129,7 @@ endif
 
 set background=dark
 colorscheme solarized
-set guifont=Anonymous\ Pro:h13
+set guifont=Anonymous\ Pro:h14
 
 set hlsearch	"Highlight search results
 

@@ -9,7 +9,21 @@ Just another dotfiles repo.
 You can clone the repository wherever you want. (e.g. `~/Projects/dotfiles`, with `~/dotfiles` as a symlink.) The bootstrapper script will pull in the latest version and copy the files to your home folder.
 
 ```bash
-git clone https://github.com/jochec/dotfiles.git && cd dotfiles && source bootstrap.sh
+# Clone the repo
+git clone https://github.com/jochec/dotfiles.git && cd dotfiles
+
+# Fetch submodules (Vundle)
+git submodule update --init
+
+# Install
+source bootstrap.sh
+
+# Install VIM plugins using Vundle
+vim +BundleInstall +qall
+
+# Compiling YouCompleteMe with semantic support for C-family languages
+cd ~/.vim/bundle/YouCompleteMe
+./install.sh --clang-completer
 ```
 
 To update, `cd` into your local `dotfiles` repository and then:
