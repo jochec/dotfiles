@@ -20,6 +20,8 @@ install macvim --override-system-vim
 
 # Required for Tagbar VIM plugin
 install ctags-exuberant
+# Required for YouCompleteMe
+install cmake
 
 # Install other useful binaries
 install git

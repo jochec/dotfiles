@@ -22,6 +22,7 @@ source bootstrap.sh
 vim +BundleInstall +qall
 
 # Compiling YouCompleteMe with semantic support for C-family languages
+# NOTE: Run Brew formulae and install latest Xcode with Command Line Tools before doing this
 cd ~/.vim/bundle/YouCompleteMe
 ./install.sh --clang-completer
 ```
@@ -37,16 +38,6 @@ Alternatively, to update while avoiding the confirmation prompt:
 ```bash
 set -- -f; source bootstrap.sh
 ```
-
-### Git-free install
-
-To install these dotfiles without Git:
-
-```bash
-cd; curl -#L https://github.com/jochec/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,LICENSE-MIT.txt}
-```
-
-To update later on, just run that command again.
 
 ### Specify the `$PATH`
 
