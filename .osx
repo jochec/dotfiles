@@ -443,6 +443,13 @@ defaults write com.apple.dock wvous-bl-corner -int 10
 defaults write com.apple.dock wvous-bl-modifier -int 0
 
 ###############################################################################
+# Fonts                                                             #
+###############################################################################
+
+# Install Anonymous Pro font
+find init/AnonymousPro-1.002/ -name "*.ttf" -exec cp -iv {} /Library/Fonts 2> /dev/null
+
+###############################################################################
 # Safari & WebKit                                                             #
 ###############################################################################
 
