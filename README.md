@@ -26,6 +26,7 @@ vim +BundleInstall +qall
 cd ~/.vim/bundle/YouCompleteMe
 ./install.sh --clang-completer
 ```
+If you're getting errors, make sure that permissions are correct (755).
 
 To update, `cd` into your local `dotfiles` repository and then:
 
